@@ -11,8 +11,8 @@ layout: default
         <span>Welcome to my Website!</span>
         <button onclick="toggleNavbar()">☰</button>
         <ul>
-            <li><a href=".">Home</a></li>
-            <li><a href="projects">Projects</a></li>
+            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li><a href="{{ "/projects" | relative_url }}">Projects</a></li>
         </ul>
     </div>
     <div class="wave-1">
@@ -52,43 +52,43 @@ layout: default
     <h2>Tech&shy;no&shy;logies I work with</h2>
     <div class="technologies">
         <div>
-            <img src="assets/img/python.png" alt="Python Logo"/>
+            <img src="{{ "/assets/img/python.png" | relative_url }}" alt="Python Logo">
             <span>Python</span>
         </div>
         <div>
-            <img src="assets/img/css.png" alt="CSS Logo">
+            <img src="{{ "/assets/img/css.png" | relative_url }}" alt="CSS Logo">
             <span>HTML/CSS</span>
         </div>
         <div>
-            <img src="assets/img/js.png" alt="JS Logo">
+            <img src="{{ "/assets/img/js.png" | relative_url }}" alt="JS Logo">
             <span>JS/TS</span>
         </div>
         <div>
-            <img src="assets/img/git.png" alt="Git Logo">
+            <img src="{{ "/assets/img/git.png" | relative_ur }}" alt="Git Logo">
             <span>Git</span>
         </div>
         <div>
-            <img src="assets/img/docker.png" alt="Docker Logo">
+            <img src="{{ "/assets/img/docker.png" | relative_ur }}" alt="Docker Logo">
             <span>Docker</span>
         </div>
         <div>
-            <img src="assets/img/java.png" alt="Java Logo">
+            <img src="{{ "/assets/img/java.png" | relative_ur }}" alt="Java Logo">
             <span>Java</span>
         </div>
         <div>
-            <img src="assets/img/react.png" alt="React Logo">
+            <img src="{{ "/assets/img/react.png" | relative_ur }}" alt="React Logo">
             <span>ReactJS</span>
         </div>
         <div>
-            <img src="assets/img/node.png" alt="NodeJS Logo">
+            <img src="{{ "/assets/img/node.png" | relative_ur }}" alt="NodeJS Logo">
             <span>NodeJS</span>
         </div>
         <div>
-            <img src="assets/img/jetbrains.png" alt="JetBrains Logo">
+            <img src="{{ "/assets/img/jetbrains.png" | relative_ur }}" alt="JetBrains Logo">
             <span>JetBrains IDEs</span>
         </div>
         <div>
-            <img src="assets/img/figma.png" alt="Figma Logo">
+            <img src="{{ "/assets/img/figma.png" | relative_ur }}" alt="Figma Logo">
             <span>Figma</span>
         </div>
     </div>

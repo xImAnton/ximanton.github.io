@@ -347,6 +347,11 @@ footer {
     width: 6rem;
     height: 6rem;
     object-fit: contain;
+    transition: transform 100ms;
+}
+
+.technologies div img:hover {
+    transform: scale(1.05);
 }
 
 .technologies div span {
