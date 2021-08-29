@@ -1,8 +1,10 @@
 <footer id="footer">
     <div class="contact">
         <a rel="noopener" href="https://github.com/{{ site.github_username }}" target="_blank"><img src="{{ "/assets/img/github.png" | relative_url }}" alt="GitHub Logo" /></a>
-        <div class="copy-alert" id="discord-copy" data-value="{{ site.discord_tag }}">Copied Discord Tag</div>
-        <a onclick="copyDiscord();"><img src="{{ "/assets/img/discord.png" | relative_url }}" alt="Discord Logo" /></a>
+        <a onclick="copyDiscord();" class="discord-link">
+            <img src="{{ "/assets/img/discord.png" | relative_url }}" alt="Discord Logo" />
+            <div class="copy-alert" id="discord-copy" data-value="{{ site.discord_tag }}">Copied Discord Tag</div>
+        </a>
         <a href="mailto:{{ site.email }}"><img src="{{ "/assets/img/mail.png" | relative_url }}" alt="E-Mail Symbol" /></a>
         <a rel="noopener" href="https://instagram.com/{{ site.instagram }}" target="_blank"><img src="{{ "/assets/img/instagram.png" | relative_url }}" alt="Instagram Logo" /></a>
     </div>

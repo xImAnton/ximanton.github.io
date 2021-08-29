@@ -79,6 +79,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
+  jekyll-paginate
   rake (~> 12.3.3)
   wdm (~> 0.1.1)
   webrick (~> 1.7)

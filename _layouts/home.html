@@ -2,19 +2,16 @@
 layout: default
 ---
 
+<style>
+    body {
+        background-color: var(--background);
+    }
+</style>
 <section class="top-section" id="top">
     <div class="header-anchor-wrapper">
         <div id="header-anchor"></div>
     </div>
-    <div class="header" id="header" tabindex="-1" onblur="setNavbarShown(false)">
-        <h1 id="headline">xImAnton&shy;.de</h1>
-        <span>Welcome to my Website!</span>
-        <button onclick="toggleNavbar()">☰</button>
-        <ul>
-            <li><a href="{{ "/" | relative_url }}">Home</a></li>
-            <li><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-        </ul>
-    </div>
+    {% include header.html always_on_top=false %}
     <div class="wave-1">
         <div id="about"></div>
         <svg id="wave-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -93,3 +90,4 @@ layout: default
         </div>
     </div>
 </section>
+<script src="{{ "assets/js/home.js" | relative_url }}"></script>

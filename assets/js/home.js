@@ -1,26 +1,5 @@
 "use strict";
 
-function copyTextToClipboard(text) {
-    const tempElement = document.createElement("textarea")
-    tempElement.value = text
-    document.body.appendChild(tempElement)
-    tempElement.select()
-    document.execCommand("copy")
-    document.body.removeChild(tempElement)
-}
-
-function copyDiscord() {
-    let e = document.getElementById("discord-copy")
-
-    copyTextToClipboard(e.getAttribute("data-value"))
-
-    e.style.display = "block"
-    setTimeout(function () {
-        e.style.display = "none"
-    }, 2000)
-}
-
-let navbarShown = false
 
 window.addEventListener("load", () => {
     const header = document.getElementById("header")
@@ -52,20 +31,3 @@ window.addEventListener("load", () => {
 
     window.addEventListener("scroll", callback)
 })
-
-function setNavbarShown(b) {
-    navbarShown = b
-
-    const header = document.getElementById("header")
-
-    if (navbarShown) {
-        header.classList.add("navbar-shown")
-        header.focus()
-    } else {
-        header.classList.remove("navbar-shown")
-    }
-}
-
-function toggleNavbar() {
-    setNavbarShown(!navbarShown)
-}

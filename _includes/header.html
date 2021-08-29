@@ -1,0 +1,9 @@
+<div class="header{% if include.always_on_top %} top{% endif %}" id="header" tabindex="-1">
+    <h1 id="headline">xImAnton&shy;.de</h1>
+    <span>Welcome to my Website!</span>
+    <button onclick="toggleNavbar()">☰</button>
+    <ul>
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/projects" | relative_url }}">Projects</a></li>
+    </ul>
+</div>
