@@ -25,7 +25,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+:not(.post-content) > h2 {
     font-size: 3rem;
     margin: 0 0 .6rem;
     text-align: center;
@@ -413,10 +413,6 @@ section.text.centered {
     border: 0;
     border-top: 1px solid #2D2D2D63;
     margin: 2rem 0;
-}
-
-.post-item:last-child hr {
-    display: none;
 }
 
 .post-item .date {

@@ -1,10 +1,11 @@
 ---
 layout: text
-title: xImAnton.de | Blog
+title: Blog
 ---
 
 <ul class="post-list section-text">
     {% for post in paginator.posts %}
+        {% unless post.hidden %}
         <li class="post-item">
             <a href="{{ post.url }}">
                 <span class="date">{{ post.date | date: "%d. %B %Y" }}</span>
@@ -15,6 +16,11 @@ title: xImAnton.de | Blog
             </a>
             <hr>
         </li>
+        {% endunless %}
     {% endfor %}
-    {% include post-navigation.html back=paginator.previous_page_path forward=paginator.next_page_path center=paginator.page %}
+    {% include post-navigation.html
+        back=paginator.previous_page_path
+        forward=paginator.next_page_path
+        center=paginator.page
+    %}
 </ul>

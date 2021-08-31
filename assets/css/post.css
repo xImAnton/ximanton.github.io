@@ -9,9 +9,21 @@
 
 .post h1 {
     color: var(--background);
-    line-height: 1.1em;
     font-family: var(--sans);
     margin-bottom: .5em;
+    line-height: normal;
+}
+
+.post h2, .post h3, .post h4, .post h5, .post h6 {
+    font-family: var(--sans);
+    text-align: left;
+    line-height: normal;
+    color: var(--background);
+    margin: .4em 0;
+}
+
+.post p {
+    margin: 0 0 .8em;
 }
 
 .post, .post-meta {
@@ -26,4 +38,17 @@
 
 .post-meta .it {
     font-style: italic;
+}
+
+.post hr {
+    border: 0;
+    border-top: 1px solid #2D2D2D63;
+    margin: 2rem 0;
+}
+
+.post-content img {
+    width: 100%;
+    margin: 1em 0;
+    border: 1px solid #d7d7d7d9;
+    border-radius: .3em;
 }
