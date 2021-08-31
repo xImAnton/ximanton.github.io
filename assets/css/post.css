@@ -1,0 +1,29 @@
+.post-content {
+    font-size: .7em;
+    text-align: left;
+}
+
+.post-content.centered {
+    text-align: center;
+}
+
+.post h1 {
+    color: var(--background);
+    line-height: 1.1em;
+    font-family: var(--sans);
+    margin-bottom: .5em;
+}
+
+.post, .post-meta {
+    font-family: var(--serif);
+}
+
+.post-meta {
+    color: var(--light-background);
+    font-size: .6em;
+    line-height: 1.6em;
+}
+
+.post-meta .it {
+    font-style: italic;
+}

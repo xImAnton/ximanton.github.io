@@ -1,0 +1,5 @@
+<li class="post-navigation">
+    {% if include.back %} <a href="{{ include.back | prepend: site.baseurl }}">←</a> {% else %} <span></span> {% endif %}
+    <span>{{ include.center }}</span>
+    {% if include.forward %}<a href="{{ include.forward | prepend: site.baseurl }}">→</a> {% else %} <span></span> {% endif %}
+</li>

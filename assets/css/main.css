@@ -14,14 +14,14 @@ section {
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--sans);
     width: 100%;
     position: relative;
 }
 
 h1 {
     margin: 0;
-    font-size: 5rem;
+    /*font-size: 5rem;*/
     text-align: center;
 }
 
@@ -225,6 +225,7 @@ footer {
 
 .header h1 {
     transition: font-size 500ms;
+    font-size: 5rem;
 }
 
 .header.top {
@@ -383,6 +384,10 @@ section.text {
     min-height: calc(100vh - 84px - 66px);
 }
 
+section.text.centered {
+    justify-content: center;
+}
+
 .post-list {
     list-style-type: none;
     margin: 0;
@@ -417,7 +422,7 @@ section.text {
 .post-item .date {
     font-size: .9rem;
     color: var(--light-background);
-    font-family: "Palatino Linotype", serif;
+    font-family: var(--serif);
     position: relative;
     top: .6rem;
 }
@@ -442,7 +447,7 @@ section.text {
     margin: 0;
     padding: 0;
     color: #000000;
-    font-family: "Palatino Linotype", serif;
+    font-family: var(--serif);
     font-weight: 400;
 }
 
@@ -497,14 +502,6 @@ section.text {
     display: flex;
     justify-content: space-between;
     font-size: .5em;
-}
-
-.post-navigation > * {
-    visibility: hidden;
-}
-
-.post-navigation > .shown {
-    visibility: visible;
 }
 
 .post-navigation a {

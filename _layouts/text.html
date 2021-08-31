@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% include header.html always_on_top=true %}
-<section class="text">
+<section class="text{% if page.centered %} centered{% endif %}">
     <div class="post-list section-text">
         {{ content }}
     </div>

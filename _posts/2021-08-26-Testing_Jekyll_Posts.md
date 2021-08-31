@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Testing Jekyll Posts"
+author: Anton Vogelsang
 ---
 
 # Welcome

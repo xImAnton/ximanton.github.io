@@ -41,4 +41,6 @@ function toggleNavbar() {
 
 window.addEventListener("load", () => {
     document.getElementById("header").addEventListener("blur", () => setNavbarShown(false))
+    // prevent closing of expanded header on nav item click
+    document.querySelectorAll("#header > ul > li").forEach(e => e.addEventListener("mousedown", (v) => v.preventDefault()))
 })

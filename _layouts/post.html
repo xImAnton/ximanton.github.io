@@ -2,4 +2,24 @@
 layout: text
 ---
 
-{{ content }}
+<div class="post">
+    {% if page.author or page.date %}
+    <div class="post-meta">
+         <span class="it">Written
+         {% if page.author %}
+             by</span> {{ page.author }}<br>
+         {% else %}
+             </span>
+         {% endif %}
+
+         {% if page.date %}
+             <span class="it">on</span> {{ page.date | date: "%d. %B %Y" }}
+         {% endif %}
+    </div>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <div class="post-content{% if page.centered %} centered{% endif %}">
+        {{ content }}
+    </div>
+    {% include post-navigation.html back=page.previous.url forward=page.next.url %}
+</div>
