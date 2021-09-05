@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Anton Vogelsang -- Creation of Website
 
 # THANKS
 
-    <name>
+    Jekyll Tale Theme -- Inspiration -- https://github.com/chesterhow/tale/
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, Javascript, Markdown
+    Jekyll SSG, Liquid Templating Language, GitHub Pages
