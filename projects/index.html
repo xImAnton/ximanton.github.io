@@ -3,6 +3,18 @@ layout: text
 title: Blog
 ---
 
+<div class="post">
+    <h1>Projects</h1>
+    <div class="project-overview-desc post-content">
+        This is a little blog about my projects.
+        Feel free to
+        <a onclick="const [e,c] = [document.getElementById('contact').classList,'highlighted'];
+                    e.add(c);
+                    setTimeout(() => e.remove(c), 700)"
+           href="#contact">message</a>
+        me to talk and ask questions concerning them.
+    </div>
+</div>
 <ul class="post-list section-text">
     {% for post in paginator.posts %}
         {% unless post.hidden %}
@@ -11,16 +23,16 @@ title: Blog
                 <span class="date">{{ post.date | date: "%d. %B %Y" }}</span>
                 <h2>{{ post.title }}</h2>
                 <div>
-                    {{ post.excerpt }}
+                    {{ post.content | strip_html | truncatewords: 35 }}
                 </div>
             </a>
             <hr>
         </li>
         {% endunless %}
     {% endfor %}
-    {% include post-navigation.html
-        back=paginator.previous_page_path
-        forward=paginator.next_page_path
-        center=paginator.page
-    %}
 </ul>
+{% include post-navigation.html
+    back=paginator.previous_page_path
+    forward=paginator.next_page_path
+    center=paginator.page
+%}

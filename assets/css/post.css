@@ -14,6 +14,12 @@
     line-height: normal;
 }
 
+@media screen and (max-width: 620px) {
+    .post h1 {
+        font-size: 1.4em;
+    }
+}
+
 .post h2, .post h3, .post h4, .post h5, .post h6 {
     font-family: var(--sans);
     text-align: left;

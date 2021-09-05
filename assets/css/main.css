@@ -166,6 +166,11 @@ footer {
     align-items: center;
     padding: 21px;
     column-gap: .9rem;
+    transition: background-color 300ms;
+}
+
+.contact.highlighted {
+    background-color: #2C81E5;
 }
 
 .contact img {
@@ -437,7 +442,7 @@ section.text.centered {
     padding: 0;
 }
 
-.post-item div * {
+.post-item div *, .post-item div {
     font-size: 1rem;
     text-align: left;
     margin: 0;
@@ -473,7 +478,7 @@ section.text.centered {
 }
 
 @media screen and (max-width: 888px) {
-    .section-text, h2 {
+    .section-text, section > h2 {
         padding: 0 2em;
         width: 100%;
         max-width: initial;
@@ -489,7 +494,7 @@ section.text.centered {
         font-size: 3.2rem;
     }
 
-    h2 {
+    section > h2 {
         font-size: 2.5rem;
     }
 }
@@ -506,4 +511,10 @@ section.text.centered {
 
 .discord-link {
     position: relative;
+}
+
+.project-overview-desc {
+    line-height: 1.3em;
+    text-align: center !important;
+    margin-bottom: 2em;
 }
