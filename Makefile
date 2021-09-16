@@ -3,3 +3,6 @@ dev:
 
 serve:
 	serve _site
+
+build:
+	bundle exec jekyll build
