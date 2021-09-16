@@ -10,6 +10,7 @@ instagram: "antondevde"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
 paginate: 5
 paginate_path: "/projects/:num"
