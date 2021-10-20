@@ -1,0 +1,11 @@
+{% assign posts = site.posts | where: "series", include.series | sort: "index" %}
+<h3>The Series</h3>
+<ol>
+    {% for post in posts %}
+    <li>
+        <a href="{{ post.url }}" class="series-link">
+            {{ post.title }} {% if page == post %}[This]{% endif %}
+        </a>
+    </li>
+    {% endfor %}
+</ol>

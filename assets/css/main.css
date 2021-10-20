@@ -525,3 +525,7 @@ section.text.centered {
     text-align: center !important;
     margin-bottom: 2em;
 }
+
+.series-link {
+    text-decoration: none;
+}
