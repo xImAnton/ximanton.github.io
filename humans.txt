@@ -3,13 +3,26 @@
 
 # TEAM
 
-    Anton Vogelsang -- Creation of Website
+    Anton Vogelsang -- Creation of Website & Blogwriting
+    Fritz Tiedemann -- Proofreading, Advice & Hosting
+    Louis Hermes -- Proofreading & Advice
 
-# THANKS
+# THANKS TO
 
     Jekyll Tale Theme -- Inspiration -- https://github.com/chesterhow/tale/
+    Fritz Tiedemann -- Hosting of the Website on his Server
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5, Javascript, Markdown
-    Jekyll SSG, Liquid Templating Language, GitHub Pages
+    Languages: CSS3, HTML5, Javascript, Markdown
+
+    Components:
+        Jekyll Static Site Generator -- https://jekyllrb.com/
+        Liquid Templating Language -- https://shopify.github.io/liquid/
+        GitHub Pages Hosting -- https://pages.github.com/
+
+    Development:
+        JetBrains PhpStorm Web IDE -- https://www.jetbrains.com/phpstorm/
+        Typora Markdown Editor -- https://typora.io/
+        Git Version Control -- https://git-scm.com/
+        Figma Design Tool -- https://www.figma.com/
