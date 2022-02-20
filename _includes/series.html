@@ -1,5 +1,5 @@
 {% assign posts = site.posts | where: "series", page.series | sort: "index" %}
-<h3>The Series</h3>
+<h3>Related posts</h3>
 <ol>
     {% for post in posts %}
         {% if post.published != false %}
