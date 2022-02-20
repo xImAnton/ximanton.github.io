@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Anton Vogelsang">
+    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Anton Vogelsang{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:title" content="{{ page.title }}">
