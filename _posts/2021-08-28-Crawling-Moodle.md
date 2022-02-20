@@ -2,6 +2,7 @@
 layout: post
 title: "Crawling Moodle"
 author: Anton Vogelsang
+image: https://ximanton.github.io/assets/img/posts/moodle_discord.png
 ---
 
 Home office Time: Video conferences can take place every time

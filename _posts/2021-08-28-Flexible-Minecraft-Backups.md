@@ -2,6 +2,7 @@
 layout: post
 title: "Flexible Minecraft Backups"
 author: Anton Vogelsang
+image: https://ximanton.github.io/assets/img/posts/flexbackup_interface.png
 ---
 
 We had the struggle a few times on our Minecraft Server: 

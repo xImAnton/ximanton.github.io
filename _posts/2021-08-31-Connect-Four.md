@@ -2,6 +2,7 @@
 layout: post
 title: "Connect Four"
 author: Anton Vogelsang
+image: https://ximanton.github.io/assets/img/posts/connect_4.JPG
 ---
 
 What it says is what it is.  

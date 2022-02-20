@@ -6,6 +6,9 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:site_name" content="xImAnton.de">
     <meta name="theme-color" content="#7607E6">
+    {% if page.image %}
+    <meta name="og:image" content="{{ page.image }}">
+    {% endif %}
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     <meta property="og:description" content="{{ page.description }}">
