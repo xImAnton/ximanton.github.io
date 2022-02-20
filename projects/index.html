@@ -1,6 +1,7 @@
 ---
 layout: text
 title: Blog
+description: "This is a little blog about my projects. Feel free to message me to talk and ask questions concerning them"
 ---
 
 <div class="post">
@@ -8,10 +9,7 @@ title: Blog
     <div class="project-overview-desc post-content">
         This is a little blog about my projects.
         Feel free to
-        <a onclick="const [e,c] = [document.getElementById('contact').classList,'highlighted'];
-                    e.add(c);
-                    setTimeout(() => e.remove(c), 700)"
-           href="#contact">message</a>
+        <a onclick="const [e,c] = [document.getElementById('contact').classList,'highlighted'];e.add(c);setTimeout(function() {e.remove(c)}, 700)" href="#contact">message</a>
         me to talk and ask questions concerning them.
     </div>
 </div>
