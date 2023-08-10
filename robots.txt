@@ -3,3 +3,7 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
+
+# exlude openai
+User-agent: GPTBot
+Disallow: /
